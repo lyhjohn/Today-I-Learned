@@ -1,0 +1,148 @@
+# CSS 기초 태그 예시
+```css
+/* 동일한 class는 여러개 만들 수 있지만 동일한 id는 하나만 있어야함 */
+
+
+/* 문단 요소 안 텍스트의 색상 */
+p {
+    color: red;
+}
+
+/* p: 선택자, color: 속성, red: 속성값 */
+
+
+
+div span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: blue;
+  }
+  /* div 안에있는 span태그의 위치가 div를 기준으로 10px씩 이동하게됨. (position: absolute가 없으면 body를 기준으로 10px 이동함) */
+
+
+
+  div{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    background-color: red;
+  }
+  /* 스크롤을 내려도 해당 div부분은 최상단에 고정되어 보여짐 / 다른 영역과 겹쳐질수있음 */
+
+
+  div{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    background-color: red;
+  }
+  /* 스크롤을 내리다가 해당 div부분에 걸리면 해당 영역이 상단에 고정되어 보여짐 */
+
+
+  div { 
+    display: inline;
+    background-color: red;
+  }
+  /* div태그들을 inline 속성으로 만듬 */
+
+  div { 
+    display: inline-block;
+    background-color: red;
+  }
+  /* 공백 단위로 끊어서 inline으로 배치됨 */
+
+
+
+  .flex {
+    display: flex;
+  }
+
+  .div1 { 
+    display: inline;
+    background-color: red;
+  }
+  
+  .div2 {
+    display: inline;
+    background-color: blue;
+  }
+  
+  .div3 {
+    display: inline;
+    background-color: green;
+  }
+  /* div1, div2, div3 class들을 inline속성으로 만듬 */
+  /* flex 속성 안에 있는 것들은 공백 없이 inline처럼 세워짐 (내부 태그들에 inline 속성 없어도 됨) */
+
+
+  div { 
+    display: none;
+    background-color: red;
+  }
+  /* 안보이게 감춤 */
+
+
+  div {
+    border: 1px solid #000;
+  }
+  /* 특정 영역에 테두리선을 만듬 */
+
+
+  div {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #000;
+    background: red;
+    font-size: 12px;
+    font-weight: 700;
+    /*300(thin) | 400(normal) | 500(medium) | 700(bold) | 900(extra bold)    */
+    color: #000;
+    text-align: center;
+    overflow: auto;
+  /* auto: 영역을 넘어가면 스크롤생김 | hidden: 영역 안에 들어오는 내용만 보여줌
+    scroll: auto와 같으나 영역 넘어감 유무와 상관없이 항상 가로세로 스크롤을 만듬*/
+  }
+
+  .div1 {
+    position: relative;
+    z-index: 1;
+  }
+  /* 영역이 겹쳤을 때 z-index 값이 큰 영역부터 위로 보내줌 (z-index: 0이 기본값.) */
+
+
+  * {
+    color: red;
+  }
+  /* 전체선택자(*) 모든 태그들에 적용됨  */
+
+  .box * {
+    font-size: 40px
+  }
+  /* 해당 클래스 안에 있는 모든 태그들에 적용됨 */
+
+  .box .text1 {
+    color: green;
+  }
+  /* 해당 클래스 안에 있는 클래스에만 적용됨 */
+
+
+
+  /* 특성 선택자 attr*/
+  /*
+(html)
+<input type="text">
+<img src="#" alt="이미지의 설명"> */
+input[type="text"] {
+    border-color: red;
+  }
+  
+  img[alt] {
+    border: 1px solid blue;
+  }
+```
