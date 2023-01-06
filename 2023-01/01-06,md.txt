@@ -1,0 +1,8 @@
+<details>
+  <summary><span style="border-bottom:0.05em solid"><strong>TCP/IP 계층과 OSI 7계층 간의 계층 구조 차이를 간단히 설명하세요.</strong></span></summary>
+  <hr>
+전체적인 역할은 같으나 계층의 세분화에서 약간 다릅니다.
+TCP/IP 계층의 애플리케이션 계층은 OSI 7계층에서 애플리케이션, 프레젠테이션, 세션 계층으로 나뉩니다.
+링크 계층은 OSI 7계층에서 데이터링크, 물리 계층으로 나뉘어서 TCP/IP는 총 4계층으로 구성되어 있습니다.
+그 외 전송 계층과 인터넷 계층이 동일하게 하나씩 있습니다.
+</details>
